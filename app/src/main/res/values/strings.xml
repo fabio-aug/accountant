@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">Accountant</string>
+    <string name="red_blood_cell" translatable="false">Red Blood Cells</string>
+    <string name="leukocytes" translatable="false">Leukocytes</string>
+    <string name="clear_all" translatable="false">Clear All</string>
+
+    <string name="zero" translatable="false">0</string>
+    <string name="plus_one" translatable="false">+ 1</string>
+</resources>

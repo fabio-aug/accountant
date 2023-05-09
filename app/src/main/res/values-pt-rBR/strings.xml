@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contador</string>
+    <string name="red_blood_cell">Hemácias</string>
+    <string name="leukocytes">Leucócitos</string>
+    <string name="clear_all">Limpar Tudo</string>
+
+    <string name="zero">0</string>
+    <string name="plus_one">+ 1</string>
+</resources>

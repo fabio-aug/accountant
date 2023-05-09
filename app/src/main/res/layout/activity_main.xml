@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_red_blood_cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/red_blood_cell"
+        android:textSize="40sp"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_count_red_blood_cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/zero"
+        android:textSize="30sp"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/text_red_blood_cell"
+        app:layout_constraintStart_toStartOf="@+id/text_red_blood_cell"
+        app:layout_constraintTop_toBottomOf="@+id/text_red_blood_cell" />
+
+    <Button
+        android:id="@+id/btn_red_blood_cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="btnScreenRedBloodCell"
+        android:text="@string/plus_one"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_count_red_blood_cell"
+        app:layout_constraintStart_toStartOf="@+id/text_count_red_blood_cell"
+        app:layout_constraintTop_toBottomOf="@+id/text_count_red_blood_cell" />
+
+    <TextView
+        android:id="@+id/text_leukocytes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/leukocytes"
+        android:textSize="40sp"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_red_blood_cell" />
+
+    <TextView
+        android:id="@+id/text_count_leukocytes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/zero"
+        android:textSize="30sp"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/text_leukocytes"
+        app:layout_constraintStart_toStartOf="@+id/text_leukocytes"
+        app:layout_constraintTop_toBottomOf="@+id/text_leukocytes" />
+
+    <Button
+        android:id="@+id/btn_leukocytes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="btnScreenLeukocytes"
+        android:text="@string/plus_one"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_count_leukocytes"
+        app:layout_constraintStart_toStartOf="@+id/text_count_leukocytes"
+        app:layout_constraintTop_toBottomOf="@+id/text_count_leukocytes" />
+
+    <Button
+        android:id="@+id/clear_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:onClick="clearAll"
+        android:text="@string/clear_all"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

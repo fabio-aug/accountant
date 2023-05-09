@@ -1,2 +1,3 @@
-# accountant
-Um contador em android nativo
+# Accountant
+
+Um contador em android nativo.
