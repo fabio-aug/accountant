@@ -49,16 +49,19 @@ public class MainActivity extends AppCompatActivity {
         addLeukocytes();
     }
 
+    @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
             addRedBloodCell();
+            return true;
         }
 
         if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
             addLeukocytes();
+            return true;
         }
 
-        return true;
+        return super.onKeyDown(keyCode, event);
     }
 
     public void clearAll(View view) {
